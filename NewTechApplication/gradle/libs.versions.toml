@@ -5,7 +5,6 @@ dagger = "2.48.1"
 androidxAppcompatVersion = "1.6.1"
 comGoogleAndroidMaterialVersion = "1.11.0"
 kotlin = "1.9.10"
-kotlinJvm = "1.9.10"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
 com-google-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
@@ -17,5 +16,6 @@ kotlin-reflection = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", v
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
-org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinJvm" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
