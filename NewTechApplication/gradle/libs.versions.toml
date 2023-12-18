@@ -4,7 +4,9 @@ androidxCore = "1.12.0"
 dagger = "2.48.1"
 androidxAppcompatVersion = "1.6.1"
 comGoogleAndroidMaterialVersion = "1.11.0"
+androidTools = "31.1.3"
 kotlin = "1.9.10"
+ksp = "1.9.10-1.0.13"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
 com-google-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
@@ -13,9 +15,15 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 com-google-android-material = { group = "com.google.android.material", name = "material", version.ref = "comGoogleAndroidMaterialVersion" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlin-reflection = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+## project plugins
+convention-application = { id = "convention.application", version = "unspecified" }
 
