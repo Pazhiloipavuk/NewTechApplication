@@ -26,4 +26,5 @@ org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.re
 
 ## project plugins
 convention-application = { id = "convention.application", version = "unspecified" }
+convention-library = { id = "convention.library", version = "unspecified" }
 
