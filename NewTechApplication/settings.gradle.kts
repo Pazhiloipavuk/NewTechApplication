@@ -17,4 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "NewTechApplication"
 include(":app")
 include(":main_screen")
-include(":splash_screen")
+include(":base_resources")
